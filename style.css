@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+ 
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    color:#333;
+}
+ 
+/* Login & Register */
+ 
+.container{
+    width:400px;
+    background:rgba(255,255,255,0.95);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    margin:80px auto;
+    backdrop-filter:blur(10px);
+}
+ 
+.container h1{
+    text-align:center;
+    color:#4f46e5;
+    margin-bottom:20px;
+}
+ 
+.container h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#555;
+}
+ 
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    transition:0.3s;
+}
+ 
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#4f46e5;
+    box-shadow:0 0 8px rgba(79,70,229,0.3);
+}
+ 
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#4f46e5,#7c3aed);
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+ 
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(79,70,229,0.4);
+}
+ 
+/* Navigation */
+ 
+.navbar{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:20px;
+    text-align:center;
+}
+ 
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:17px;
+    font-weight:600;
+    transition:0.3s;
+}
+ 
+.navbar a:hover{
+    color:#ffd166;
+}
+ 
+/* Dashboard */
+ 
+.dashboard{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:40px;
+}
+ 
+.card{
+    width:280px;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+ 
+.card:hover{
+    transform:translateY(-5px);
+}
+ 
+.card h3{
+    color:#6b7280;
+    margin-bottom:10px;
+}
+ 
+.card h1{
+    color:#4f46e5;
+    font-size:40px;
+}
+ 
+/* Tables */
+ 
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+ 
+table th{
+    background:#4f46e5;
+    color:white;
+    padding:15px;
+}
+ 
+table td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+ 
+/* Page Headings */
+ 
+h1{
+    text-align:center;
+    color:white;
+    margin-top:30px;
+    margin-bottom:20px;
+}
+ 
+/* Activity & Goal Forms */
+ 
+.form-box{
+    width:600px;
+    max-width:90%;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    margin:30px auto;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+ 
+/* Report Section */
+ 
+#reportArea{
+    width:80%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+ 
+/* Responsive */
+ 
+@media(max-width:768px){
+ 
+    .container{
+        width:90%;
+    }
+ 
+    .dashboard{
+        flex-direction:column;
+        align-items:center;
+    }
+ 
+    .card{
+        width:90%;
+    }
+ 
+    .form-box{
+        width:95%;
+    }
+}

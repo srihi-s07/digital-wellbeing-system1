@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+ 
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+ 
+<div class="navbar">
+ 
+    <a href="dashboard.html">Dashboard</a>
+ 
+    <a href="activities.html">Activities</a>
+ 
+    <a href="goals.html">Goals</a>
+ 
+    <a href="reports.html">Reports</a>
+ 
+</div>
+ 
+<div class="dashboard">
+ 
+<div class="card">
+<h3>Productivity Score</h3>
+<h1 id="score">0</h1>
+</div>
+ 
+<div class="card">
+<h3>Total Activities</h3>
+<h1 id="activityCount">0</h1>
+</div>
+ 
+</div>
+ 
+<canvas
+id="productivityChart"
+width="600"
+height="300">
+</canvas>
+ 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+ 
+</body>
+</html>
